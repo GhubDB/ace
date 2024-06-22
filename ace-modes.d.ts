@@ -1523,6 +1523,15 @@ declare module "ace-code/src/mode/vue" {
     export const Mode: new () => import(".").Ace.SyntaxMode;
 }
 
+declare module "ace-code/src/mode/vitris_highlight_rules" {
+    export const VitrisHighlightRules: new () => import(".").Ace.HighlightRules;
+}
+
+declare module "ace-code/src/mode/vitris" {
+    export const Mode: new () => import(".").Ace.SyntaxMode;
+}
+
+
 declare module "ace-code/src/mode/wollok_highlight_rules" {
     export const WollokHighlightRules: new () => import(".").Ace.HighlightRules;
 }
