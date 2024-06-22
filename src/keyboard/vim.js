@@ -1849,6 +1849,8 @@ domLib.importCssString(`.normal-mode .ace_cursor{
       defineMotion: defineMotion,
       defineAction: defineAction,
       defineOperator: defineOperator,
+      getOperator: getOperator,
+      getAction: getAction,
       mapCommand: mapCommand,
       _mapCommand: _mapCommand,
 
@@ -3479,6 +3481,14 @@ domLib.importCssString(`.normal-mode .ace_cursor{
 
     function defineOperator(name, fn) {
       operators[name] = fn;
+    }
+
+    function getOperator(name) {
+        return operators[name];
+    };
+
+    function getAction(name) {
+        return actions[name];
     }
 
     var actions = {
